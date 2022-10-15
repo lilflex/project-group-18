@@ -1,0 +1,106 @@
+:root {
+  // indent between columns
+  --indent: 20px;
+
+  // number of cards
+  --items: 1;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+  white-space: nowrap;
+}
+
+// Набір карток
+.cards-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.cards-set-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+.contacts {
+  padding: 20px;
+  background-color: #84a178;
+}
+
+.contacts__item {
+  padding: 40px 32px;
+
+  border-radius: 24px;
+  background-color: #ffffff;
+}
+
+%contacts {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+}
+
+.contacts__department {
+  margin-bottom: 20px;
+
+  @extend %contacts;
+
+  text-transform: uppercase;
+
+  color: #131313;
+}
+
+.contacts__department-label {
+  background-color: #f8d24e;
+  padding: 3px 23px;
+  border-radius: 4px;
+}
+
+.contacts__city {
+  margin-bottom: 8px;
+
+  @extend %contacts;
+  letter-spacing: 0.04em;
+
+  color: #131313;
+}
+
+.contacts__addr {
+  margin-bottom: 24px;
+
+  @extend %contacts;
+  letter-spacing: 0.04em;
+
+  color: #d6936d;
+}
+
+.contacts__line {
+  margin-bottom: 24px;
+}
+
+.contacts__days {
+  @extend %contacts;
+
+  color: #131313;
+}
+
+.contacts__hours {
+  margin-bottom: 24px;
+
+  @extend %contacts;
+
+  color: #ababab;
+}
+
+.contacts__phone,
+.contacts__mail {
+  @extend %contacts;
+  line-height: calc(18 / 12);
+}
