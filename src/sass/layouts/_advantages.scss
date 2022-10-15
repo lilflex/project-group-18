@@ -1,0 +1,99 @@
+.container {
+  background-color: #84a178;
+  color: #fcfcfc;
+}
+.advantages {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    @media screen and(min-width:768px) {
+      gap: 80px;
+    }
+    @media screen and(min-width:1200px) {
+      gap: 32px;
+    }
+  }
+}
+.advantages__item {
+  position: relative;
+  padding-top: 66px;
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  @media screen and(min-width:768px) {
+    width: calc((100% - 240px) / 3);
+  }
+  @media screen and(min-width:1200px) {
+    width: calc((100% - 96px) / 3);
+  }
+}
+.advantages__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.22;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 58px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f8d24e;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+}
+.advantages__title--cow {
+  &::before {
+    background-image: url(../images/advantures/cow.png);
+  }
+}
+.advantages__title--weight {
+  &::before {
+    background-image: url(../images/advantures/weight.png);
+  }
+}
+.advantages__title--ice-crema {
+  &::before {
+    background-image: url(../images/advantures/ice-crema.png);
+  }
+}
+
+.advantages__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+
+  text-align: center;
+  @media screen and(min-width:768px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.74;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+
+    letter-spacing: 0.02em;
+  }
+}
