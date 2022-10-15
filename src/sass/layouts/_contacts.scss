@@ -1,0 +1,167 @@
+:root {
+  // indent between columns
+  --indent: 20px;
+
+  // number of cards
+  --items: 1;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+  white-space: nowrap;
+}
+
+// Набір карток
+.cards-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.cards-set-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+.contacts {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+}
+
+.contacts__container {
+  padding: 20px;
+  background-color: #84a178;
+
+  @media screen and (min-width: 768px) {
+    padding: 31px;
+  }
+}
+
+.contacts__list {
+  @media screen and (min-width: 768px) {
+    --indent: 16px;
+    --items: 3;
+  }
+}
+
+.contacts__item {
+  padding: 40px 32px;
+
+  border-radius: 24px;
+  background-color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 24px;
+  }
+}
+
+.contacts__department {
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  line-height: calc(22 / 12);
+
+  text-transform: uppercase;
+
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+
+.contacts__department-label {
+  background-color: #f8d24e;
+  padding: 3px 23px;
+  border-radius: 4px;
+}
+
+.contacts__citystr {
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  &:nth-child(odd) {
+    margin-bottom: 8px;
+
+    color: #131313;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &:nth-child(even) {
+    margin-bottom: 24px;
+
+    color: #d6936d;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 26px;
+      width: 159px;
+    }
+  }
+}
+
+.contacts__line {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__dayhour {
+  font-size: 12px;
+  line-height: calc(22 / 12);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  &:nth-child(odd) {
+    color: #131313;
+  }
+  &:nth-child(even) {
+    margin-bottom: 8px;
+
+    color: #ababab;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 12px;
+    }
+  }
+  &:last-child {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.contacts__phone,
+.contacts__mail {
+  font-size: 12px;
+  line-height: calc(18 / 12);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+}
