@@ -32,15 +32,26 @@
 .contacts {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
-}
 
-.contacts__container {
   padding: 20px;
-  background-color: #84a178;
+  background: linear-gradient(180deg, transparent 345px, #84a178 0);
 
   @media screen and (min-width: 768px) {
     padding: 31px;
+
+    background: linear-gradient(180deg, transparent 305px, #84a178 0);
   }
+
+  @media screen and (min-width: 1200px) {
+    padding: 40px;
+
+    background: linear-gradient(180deg, transparent 96px, #84a178 0);
+  }
+}
+
+.contacts__container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .contacts__list {
@@ -59,9 +70,15 @@
   @media screen and (min-width: 768px) {
     padding: 40px 24px;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding: 40px;
+  }
 }
 
 .contacts__department {
+  display: inline-flex;
+  padding: 0 23px;
   margin-bottom: 20px;
 
   font-size: 12px;
@@ -70,19 +87,30 @@
   text-transform: uppercase;
 
   color: #131313;
+  border-radius: 4px;
+  background-color: #f8d24e;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
+    padding: 0 14px;
 
     font-size: 16px;
     line-height: calc(30 / 16);
   }
 }
 
-.contacts__department-label {
-  background-color: #f8d24e;
-  padding: 3px 23px;
-  border-radius: 4px;
+.contacts__addr::after,
+.contacts__time::after {
+  content: '';
+  margin-bottom: 24px;
+
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .contacts__citystr {
@@ -95,6 +123,10 @@
     line-height: calc(26 / 14);
   }
 
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+
   &:nth-child(odd) {
     margin-bottom: 8px;
 
@@ -102,6 +134,12 @@
 
     @media screen and (min-width: 768px) {
       margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 8px;
+
+      line-height: calc(30 / 16);
     }
   }
 
@@ -112,7 +150,20 @@
 
     @media screen and (min-width: 768px) {
       margin-bottom: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 32px;
+      line-height: calc(29 / 16);
+    }
+  }
+
+  &:last-child {
+    @media screen and (min-width: 768px) {
       width: 159px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 100%;
     }
   }
 }
@@ -132,6 +183,11 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
   }
 
   &:nth-child(odd) {
@@ -163,5 +219,10 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
   }
 }
