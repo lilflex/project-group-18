@@ -55,9 +55,14 @@
 }
 
 .contacts__list {
+  margin-bottom: 32px;
   @media screen and (min-width: 768px) {
     --indent: 16px;
     --items: 3;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 64px;
   }
 }
 
@@ -225,4 +230,51 @@
     font-size: 16px;
     line-height: calc(30 / 16);
   }
+}
+
+.contacts__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 120px;
+  }
+}
+
+.button__locations {
+  width: 196px;
+  height: 42px;
+
+  background: #f8d24e;
+  border-radius: 10px;
+  border: 0;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+
+  color: #131313;
+}
+
+.button__franchise {
+  width: 196px;
+  height: 42px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  background-color: transparent;
 }
