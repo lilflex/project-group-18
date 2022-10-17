@@ -6,18 +6,6 @@
   --items: 1;
 }
 
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-  white-space: nowrap;
-}
-
 // Набір карток
 .cards-set {
   display: flex;
@@ -30,22 +18,34 @@
 }
 
 .contacts {
-  font-family: Montserrat, sans-serif;
+  font-size: 12px;
   font-weight: 500;
 
   padding: 20px;
-  background: linear-gradient(180deg, transparent 345px, #84a178 0);
+  background: linear-gradient(
+    180deg,
+    transparent 345px,
+    var(--background-green) 0
+  );
 
   @media screen and (min-width: 768px) {
     padding: 31px;
 
-    background: linear-gradient(180deg, transparent 305px, #84a178 0);
+    background: linear-gradient(
+      180deg,
+      transparent 305px,
+      var(--background-green) 0
+    );
   }
 
   @media screen and (min-width: 1200px) {
     padding: 40px;
 
-    background: linear-gradient(180deg, transparent 96px, #84a178 0);
+    background: linear-gradient(
+      180deg,
+      transparent 96px,
+      var(--background-green) 0
+    );
   }
 }
 
@@ -70,7 +70,7 @@
   padding: 40px 32px;
 
   border-radius: 24px;
-  background-color: #ffffff;
+  background-color: var(--background-white);
 
   @media screen and (min-width: 768px) {
     padding: 40px 24px;
@@ -91,9 +91,9 @@
 
   text-transform: uppercase;
 
-  color: #131313;
+  color: var(--primary-text-color);
   border-radius: 4px;
-  background-color: #f8d24e;
+  background-color: var(--btn-background-yellow);
 
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
@@ -111,7 +111,7 @@
 
   display: block;
   width: 100%;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid var(--border-gray);
 
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
@@ -135,7 +135,7 @@
   &:nth-child(odd) {
     margin-bottom: 8px;
 
-    color: #131313;
+    color: var(--primary-text-color);
 
     @media screen and (min-width: 768px) {
       margin-bottom: 12px;
@@ -151,7 +151,7 @@
   &:nth-child(even) {
     margin-bottom: 24px;
 
-    color: #d6936d;
+    color: var(--orange-text-color);
 
     @media screen and (min-width: 768px) {
       margin-bottom: 26px;
@@ -196,12 +196,12 @@
   }
 
   &:nth-child(odd) {
-    color: #131313;
+    color: var(--primary-text-color);
   }
   &:nth-child(even) {
     margin-bottom: 8px;
 
-    color: #ababab;
+    color: var(--gray-text-color);
 
     @media screen and (min-width: 768px) {
       margin-bottom: 12px;
@@ -220,6 +220,7 @@
 .contacts__mail {
   font-size: 12px;
   line-height: calc(18 / 12);
+  color: #131313;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -251,30 +252,32 @@
   }
 }
 
-.button__locations {
-  width: 196px;
-  height: 42px;
-
-  background: #f8d24e;
-  border-radius: 10px;
-  border: 0;
-
+%button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
+  border-radius: 10px;
+}
 
-  color: #131313;
+.button__locations {
+  @extend %button;
+
+  background: var(--btn-background-yellow);
+  border: 0;
+  color: var(--primary-text-color);
 }
 
 .button__franchise {
-  width: 196px;
-  height: 42px;
+  @extend %button;
 
-  font-weight: 600;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--btn-background-yellow);
   border-radius: 10px;
   background-color: transparent;
+}
+
+.contacts__arrow {
+  margin-left: 6px;
 }
