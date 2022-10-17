@@ -10,11 +10,11 @@
     background-color: rgba(0, 0, 0, 0.08);
 }
 
-// .buy-now-backdrop.is-hidden {
-//     opacity: 0;
-//     pointer-events: none;
-//     visibility: hidden;
-// }
+.buy-now-backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
 
 .buy-now-modal {
     position: absolute;
