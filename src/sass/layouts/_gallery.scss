@@ -1,0 +1,81 @@
+
+
+
+
+.gallery{
+width: 100%;
+
+margin-right: auto;
+margin-left: auto;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // mobile
+  background-image: url(../images/gallery_background/_s-@1x.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+    background-image: url(../images/gallery_background/_s-@2x.png);
+  }
+
+  // tablet
+  @media screen and (min-width: 481px){
+    background-image: url(../images/gallery_background/_m-@1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+      background-image: url(../images/gallery_background/_m-@2x.png);
+    }
+  }
+  
+  
+  // desctop
+  @media screen and (min-width: 769px){
+    background-image: url(../images/gallery_background/_l-@1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+      background-image: url(../images/gallery_background/_l-@2x.png);
+    }
+  }
+}
+
+
+
+
+.img{
+  
+    margin: auto;
+    border-radius: 24px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
