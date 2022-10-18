@@ -1,0 +1,210 @@
+<header class="header">
+  <div class="container header__container">
+    <nav class="nav">
+      <a class="logo link" href="./index.html">
+        <img
+          src="./images/hero/logo.png"
+          alt="ice cream logo"
+          class="icon-logo"
+        />
+      </a>
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a class="site-nav__link link" href="#">Home</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link link" href="#">How it’s made?</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link link" href="#products">Our products</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="menu-btn js-open-menu" type="button">
+      <svg class="menu__icon" width="32" height="32" aria-label="menu-switch">
+        <use class="icon-menu" href="./images/icons.svg#menu"></use>
+      </svg>
+    </button>
+    <button type="button" class="header__btn">Buy now ></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero__first-box">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__bold-txt">passion</span>
+      </h1>
+      <ul class="hero-buttons__list">
+        <li class="hero-buttons__item">
+          <a href="#products.html" class="border-link hero__link link"
+            >Products</a
+          >
+        </li>
+        <li class="hero-buttons__item">
+          <a href="#" class="unborder-link hero__link link">How it’s made?</a>
+        </li>
+      </ul>
+      <div class="hero__capture-box">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/plate-lg-@1x.png 1x,
+              ./images/hero/plate-lg-@2x.png 2x
+            "
+            type="image/png"
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero/plate-md-@1x.png 1x,
+              ./images/hero/plate-md-@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="hero__capture-img"
+            src="./images/hero/plate-md-@1x.png"
+            alt="plate of ice cream"
+            loading="lazy"
+          />
+        </picture>
+        <div class="hero__description">
+          <p class="desc__txt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <button class="desc__btn" type="button" data-modal-open></button>
+        </div>
+      </div>
+    </div>
+    <div class="hero__img-box">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/ice-cream-lg-@1x.png 1x,
+            ./images/hero/ice-cream-lg-@2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/ice-cream-md-@1x.png 1x,
+            ./images/hero/ice-cream-md-@2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/hero/ice-cream-sm-@1x.png 1x,
+            ./images/hero/ice-cream-sm-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="hero__main-img"
+          src="./images/hero/ice-cream-sm-@1x.png"
+          alt="boss ice cream"
+          loading="lazy"
+        />
+      </picture>
+      <img src="./images/hero/face-1.png" class="smile-pic" alt="" />
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/dots-lg-@1x.png 1x,
+            ./images/hero/dots-lg-@2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/dots-md-@1x.png 1x,
+            ./images/hero/dots-md-@2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/hero/dots-sm-@1x.png 1x,
+            ./images/hero/dots-sm-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="hero__background-img"
+          src="./images/hero/dots-sm-@1x.png"
+          alt="background dots"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+    <div class="hero__second-box">
+      <ul class="achievement-list list">
+        <li class="achievement-item">
+          <p class="achievement__txt-numbers">16</p>
+          <p class="achievement__txt">cafes</p>
+        </li>
+        <li class="achievement-item">
+          <p class="achievement__txt-numbers">23</p>
+          <p class="achievement__txt">food trucks</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Mobile menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="modal-head">
+    <a class="logo link" href="./index.html">
+      <img
+        src="./images/hero/logo.png"
+        alt="ice cream logo"
+        class="icon-logo"
+      />
+    </a>
+    <button class="menu-btn js-close-menu">
+      <svg
+        class="close-menu__icon"
+        aria-label="menu-switch"
+        width="19"
+        height="19"
+      >
+        <use class="icon-cross" href="./images/icons.svg#btn-close"></use>
+      </svg>
+    </button>
+  </div>
+  <ul class="mobile-menu list">
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__link link mobile-menu__link--active"
+        >Home</a
+      >
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__link link">How it’s made?</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__link link">Our products</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__link link">Contact</a>
+    </li>
+  </ul>
+  <button type="button" class="header__btn">Buy now ></button>
+</div>
