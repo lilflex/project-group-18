@@ -57,3 +57,66 @@
     </button>
   </div>
 </div>
+
+<!-- modal buy now -->
+<div class="buy-now-backdrop is-hidden" data-modal>
+  <div class="buy-now-modal">
+    <button class="buy-now-modal__btn--close" type="button" data-modal-close>
+      <svg class="buy-now-modal__icon" width="20" height="20">
+        <use href="../images/icons.svg#close-button"></use>
+      </svg>
+    </button>
+    <h2 class="Buy-now-modal__title">Buy now</h2>
+    <form class="buy-now-form">
+      <div class="buy-now-form__container">
+        <label class="buy-now__label-check">
+          <input type="checkbox" name="ice-cream" class="buy-now__checked" />
+          <div class="buy-now-form__box">
+            <div class="buy-now-form__box--img"></div>
+            <p class="buy-now-box__title">Ice cream</p>
+          </div>
+        </label>
+        <label class="buy-now__label-check">
+          <input type="checkbox" name="ice-cream" class="buy-now__checked" />
+          <div class="buy-now-form__box">
+            <div class="buy-now-form__box--img"></div>
+            <p class="buy-now-box__title">Ice cream</p>
+          </div>
+        </label>
+        <label class="buy-now__label-check">
+          <input type="checkbox" name="ice-cream" class="buy-now__checked" />
+          <div class="buy-now-form__box">
+            <div class="buy-now-form__box--img"></div>
+            <p class="buy-now-box__title">Ice cream</p>
+          </div>
+        </label>
+      </div>
+      <label class="buy-now-form__label">
+        <input
+          class="buy-now-form__input"
+          type="text"
+          name="Name"
+          placeholder="Name"
+        />
+      </label>
+      <label class="buy-now-form__label">
+        <input
+          class="buy-now-form__input"
+          type="tel"
+          name="tel"
+          placeholder="Phone"
+        />
+      </label>
+      <label class="buy-now-form__label">
+        <textarea
+          class="buy-now-form__input buy-now-form__textarea"
+          name="comment"
+          rows="3"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+
+      <button class="buy-now-form__btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
