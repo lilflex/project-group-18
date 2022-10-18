@@ -269,9 +269,13 @@
   border: 0;
   color: var(--primary-text-color);
 
-  &:hover,
+  &:hover {
+    background-color: var(--btn-background-green);
+  }
   &:focus {
     background-color: var(--btn-background-green);
+    color: #ffffff;
+    fill: #ffffff;
   }
 }
 
@@ -282,9 +286,12 @@
   border-radius: 10px;
   background-color: transparent;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 2px solid var(--btn-background-green);
+  }
+  &:focus {
+    color: #ffffff;
+    fill: #ffffff;
   }
 }
 
