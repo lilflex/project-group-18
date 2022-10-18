@@ -11,9 +11,9 @@
                     milk, cream, sugar and natural stabilizer
                 </p>
                 <button
-                    class="product-btn"
+                    class="product-btn js-open-modal"
                     type="button"
-                    data-modal-open
+                    data-modal="2"
                 ></button>
             </li>
             <li class="product-item">
@@ -25,9 +25,9 @@
                     and flavor enhancers
                 </p>
                 <button
-                    class="product-btn"
+                    class="product-btn js-open-modal"
                     type="button"
-                    data-modal-open
+                    data-modal="2"
                 ></button>
             </li>
             <li class="product-item">
@@ -39,11 +39,90 @@
                     sweets of your choice
                 </p>
                 <button
-                    class="product-btn"
+                    class="product-btn js-open-modal"
                     type="button"
-                    data-modal-open
+                    data-modal="2"
                 ></button>
             </li>
         </ul>
     </div>
+
+    <div class="ing-modal" data-modal="2">
+        <button class="ing-modal__btn js-modal-close">
+            <svg class="ing-modal__svg" width="11" height="11">
+                <use href="./images/icons.svg#btn-close"></use>
+            </svg>
+        </button>
+        <p class="ing-modal__header">Chololate icecream</p>
+        <div class="bg-img"></div>
+        <div class="bg-circle"></div>
+        <div class="info-box">
+            <ul class="info-list">
+                <li class="info-list__item">
+                    <span class="item-circle"><span class="info-circle">320</span> kcal</span>
+                </li>
+                <li class="info-list__item">
+                    <span class="item-circle"><span class="info-circle">4g</span> Protein</span>
+                </li>
+                <li class="info-list__item">
+                    <span class="item-circle"><span class="info-circle third">8,2g</span> Fats</span>
+                </li>
+                <li class="info-list__item">
+                    <span class="item-circle"><span class="info-circle last">40,4g</span> Carbs</span>
+                </li>
+            </ul>
+        </div>
+        <p class="table-header">Ingredients</p>
+        <div class="table-box">
+            <table class="table">
+                <tr>
+                    <td class="table__item">Milk</td>
+                    <td class="table__item">100ml</td>
+                </tr>
+                <tr>
+                    <td class="table__item">Belgian chocolate</td>
+                    <td class="table__item">20g</td>
+                </tr>
+                <tr>
+                    <td class="table__item">Cream</td>
+                    <td class="table__item">150ml</td>
+                </tr>
+                <tr>
+                    <td class="table__item">Cocoa powder</td>
+                    <td class="table__item">30g</td>
+                </tr>
+                <tr>
+                    <td class="table__item">Sugar</td>
+                    <td class="table__item">40g</td>
+                </tr>
+                <tr>
+                    <td class="table__item">Vanilla sugar</td>
+                    <td class="table__item">10g</td>
+                </tr>
+            </table>
+        </div>
+        <form class="ing-modal-list">
+            <div class="ing-modal-list__item">
+                <label class="ing-modal-list__label">
+                    <input class="ing-modal-list__input" placeholder="Name" name="name">
+                </label>
+            </div>
+            <div class="ing-modal-list__item">
+                <label class="ing-modal-list__label">
+                    <input class="ing-modal-list__input" placeholder="Phone" name="phone">
+                </label>
+            </div>
+            <div class="ing-modal-list__item">
+                <label class="ing-modal-list__label">
+                    <textarea class="ing-modal-list__com" placeholder="Comment" name="comments" cols="30"
+                        rows="4"></textarea>
+                </label>
+            </div>
+        </form>
+        <button type="submit" class="submit-btn">
+            Submit
+        </button>
+    </div>
+    
+    <div class="ing-overlay js-overlay-modal"></div>
 </section>
