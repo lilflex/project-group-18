@@ -265,9 +265,14 @@
 .button__locations {
   @extend %button;
 
-  background: var(--btn-background-yellow);
+  background-color: var(--btn-background-yellow);
   border: 0;
   color: var(--primary-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-background-green);
+  }
 }
 
 .button__franchise {
@@ -276,6 +281,11 @@
   border: 2px solid var(--btn-background-yellow);
   border-radius: 10px;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    border: 2px solid var(--btn-background-green);
+  }
 }
 
 .contacts__arrow {
