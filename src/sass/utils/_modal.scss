@@ -144,3 +144,121 @@
     height: 20px;
   }
 }
+
+// Modal window about
+.modal {
+  padding: 28px;
+  width: 280px;
+  height: 459px;
+  
+  background-color: #FCFCFC;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+
+
+  position: absolute;
+  top: 20px;
+  left: 50%;
+
+  transform: translateX(-50%) scale(1);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
+
+  @media screen and (min-width: 768px) {
+      width: 568px;
+      height: 449px;  
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 60px;
+      padding-right: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+      top: 50%;
+      
+      transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.modal__btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FCFCFC;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  @media screen and (min-width: 768px) {
+      top: 20px;
+      right: 20px;
+  }
+
+  border: none;
+
+  cursor: pointer;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  fill: #F8D24E;
+  }
+}
+
+.modal__icon {
+  width: 16px;
+  height: 16px;
+}
+
+.modal__title {
+  margin-bottom: 20px;
+
+  font-family: 'Seymour One', sans-serif;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-align: center;
+  
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+      font-size: 20px;
+      line-height: calc(28 / 20);
+      margin-bottom: 32px;
+  }
+}
+
+.modal__video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 224px;
+  height: 199px;
+
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+      width: 448px;
+      height: 205px;
+      margin-bottom: 32px;
+  }
+}
+
+.modal__text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: calc(22 / 16);
+  }
+
+}
