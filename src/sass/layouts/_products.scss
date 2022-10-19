@@ -17,7 +17,8 @@
 .uppertitle {
   margin-bottom: 12px;
 
-  color: #131313;
+  color: var(--primary-text-color);
+  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: calc(22 / 18);
@@ -39,7 +40,8 @@
 .section-title {
   margin-bottom: 148px;
 
-  color: #131313;
+  color: var(--primary-text-color);
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: calc(38 / 30);
@@ -289,7 +291,8 @@
 .product-title {
   margin-bottom: 40px;
 
-  color: #131313;
+  color: var(--primary-text-color);
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   line-height: calc(24 / 20);
   letter-spacing: 0.04em;
@@ -310,7 +313,8 @@
 }
 
 .product-text {
-  color: #131313;
+  color: var(--primary-text-color);
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 176%;
   letter-spacing: 0.04em;
@@ -322,59 +326,24 @@
 }
 
 .product-btn {
-  position: relative;
-  width: 40px;
-  height: 2px;
-  margin: auto auto 0 auto;
-  padding: 0;
-  background-color: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  height: 26px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
   border: none;
-  outline: none;
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: -4px;
-    right: -2px;
-    transform: rotate(35deg);
+  background-color: inherit;
 
-    width: 15px;
-    height: 2px;
-    background-color: #131313;
-    border-radius: 2px;
+  &:hover {
+      transform: scaleX(1.1);
   }
 
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    right: -2px;
-    transform: rotate(-35deg);
-
-    width: 15px;
-    height: 2px;
-    background-color: #131313;
-    border-radius: 2px;
+  &:focus {
+      transform: scale(1.1);
   }
-}
-
-.product-btn:hover {
-  width: 50px;
-}
-
-.product-btn:focus {
-  width: 50px;
-  height: 4px;
-}
-
-.product-btn:focus:after {
-  width: 20px;
-  height: 4px;
-  top: -5px;
-}
-
-.product-btn:focus:before {
-  width: 20px;
-  height: 4px;
-  bottom: -5px;
 }
