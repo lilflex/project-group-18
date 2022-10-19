@@ -15,6 +15,7 @@
 
     background-color: rgba(0, 0, 0, 0.2);
 
+    visibility: visible;
     opacity: 1;
 
     transition-property: opacity, visibility;
@@ -22,7 +23,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.about__backdrop--is-hidden {
+.about__backdrop.backdrop--is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
