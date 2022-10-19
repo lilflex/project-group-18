@@ -151,8 +151,8 @@
   width: 280px;
   height: 459px;
 
-  background-color: #fcfcfc;
-  border: 2px solid #f8d24e;
+  background-color: var(--white-text-color);
+  border: 2px solid var(--btn-background-yellow);
   border-radius: 10px;
 
   position: absolute;
@@ -185,7 +185,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fcfcfc;
+  background-color: var(--white-text-color);
 
   position: absolute;
   top: 8px;
@@ -205,7 +205,7 @@
 
   &:hover,
   &:focus {
-    fill: #f8d24e;
+    fill: var(--btn-background-yellow);
   }
 }
 
@@ -222,7 +222,7 @@
   line-height: calc(24 / 16);
   text-align: center;
 
-  color: #131313;
+  color: var(--primary-text-color);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -253,7 +253,7 @@
   font-size: 14px;
   line-height: calc(20 / 14);
 
-  color: #131313;
+  color: var(--primary-text-color);
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
