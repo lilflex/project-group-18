@@ -109,3 +109,36 @@
     margin-bottom: 32px;
   }
 }
+
+/**
+  |============================
+  | Slick
+  |============================
+*/
+.slick-dotted.slick-slider {
+  margin-bottom: 48px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
+}
+
+.slick-dots li button {
+  display: none;
+}
+
+.slick-dots li {
+  border-radius: 50%;
+  margin-right: 18px;
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+
+  &.slick-active {
+    background-color: var(--background-green);
+  }
+}
