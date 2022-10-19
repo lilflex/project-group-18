@@ -10,16 +10,16 @@
       </a>
       <ul class="site-nav">
         <li class="site-nav__item">
-          <a class="site-nav__link link" href="#">Home</a>
+          <a class="site-nav__link link" href="./index.html">Home</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link link" href="#">How it’s made?</a>
+          <a class="site-nav__link link" href="#about">How it’s made?</a>
         </li>
         <li class="site-nav__item">
           <a class="site-nav__link link" href="#products">Our products</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link link" href="#">Contact</a>
+          <a class="site-nav__link link" href="#contacts">Contact</a>
         </li>
       </ul>
     </nav>
@@ -28,7 +28,7 @@
         <use class="icon-menu" href="./images/icons.svg#menu"></use>
       </svg>
     </button>
-    <button type="button" class="header__btn">Buy now ></button>
+    <button type="button" class="header__btn" data-modal-open>Buy now ></button>
   </div>
 </header>
 
@@ -40,12 +40,12 @@
       </h1>
       <ul class="hero-buttons__list">
         <li class="hero-buttons__item">
-          <a href="#products.html" class="border-link hero__link link"
-            >Products</a
-          >
+          <a href="#products" class="border-link hero__link link">Products</a>
         </li>
         <li class="hero-buttons__item">
-          <a href="#" class="unborder-link hero__link link">How it’s made?</a>
+          <a href="#about" class="unborder-link hero__link link"
+            >How it’s made?</a
+          >
         </li>
       </ul>
       <div class="hero__capture-box">
@@ -192,19 +192,84 @@
   </div>
   <ul class="mobile-menu list">
     <li class="mobile-menu__item">
-      <a href="#" class="mobile-menu__link link mobile-menu__link--active"
+      <a
+        href="./index.html"
+        class="mobile-menu__link link mobile-menu__link--active"
         >Home</a
       >
     </li>
     <li class="mobile-menu__item">
-      <a href="#" class="mobile-menu__link link">How it’s made?</a>
+      <a href="#about" class="mobile-menu__link link">How it’s made?</a>
     </li>
     <li class="mobile-menu__item">
-      <a href="#" class="mobile-menu__link link">Our products</a>
+      <a href="#product" class="mobile-menu__link link">Our products</a>
     </li>
     <li class="mobile-menu__item">
-      <a href="#" class="mobile-menu__link link">Contact</a>
+      <a href="#contacts" class="mobile-menu__link link">Contact</a>
     </li>
   </ul>
   <button type="button" class="header__btn">Buy now ></button>
 </div>
+
+<!-- Buy now modal -->
+<div class="overlay-buy-now is-hidden" data-modal>
+  <div class="buy-now-modal">
+    <button class="buy-now-modal__btn--close" type="button" data-modal-close>
+      <svg class="buy-now-modal__icon" width="20" height="20">
+        <use href="./images/icons.svg#close-button"></use>
+      </svg>
+    </button>
+    <h2 class="buy-now-modal__title">Buy now</h2>
+    <form class="buy-now-form">
+      <div class="buy-now-form__container">
+        <label class="buy-now__label-check">
+          <input type="checkbox" name="ice-cream" class="buy-now__checked" />
+          <div class="buy-now-form__box">
+            <div class="buy-now-form__box--img"></div>
+            <p class="buy-now-box__title">Ice cream</p>
+          </div>
+        </label>
+        <label class="buy-now__label-check">
+          <input type="checkbox" name="ice-cream" class="buy-now__checked" />
+          <div class="buy-now-form__box">
+            <div class="buy-now-form__box--img"></div>
+            <p class="buy-now-box__title">Ice cream</p>
+          </div>
+        </label>
+        <label class="buy-now__label-check">
+          <input type="checkbox" name="ice-cream" class="buy-now__checked" />
+          <div class="buy-now-form__box">
+            <div class="buy-now-form__box--img"></div>
+            <p class="buy-now-box__title">Ice cream</p>
+          </div>
+        </label>
+      </div>
+      <label class="buy-now-form__label">
+        <input
+          class="buy-now-form__input"
+          type="text"
+          name="Name"
+          placeholder="Name"
+        />
+      </label>
+      <label class="buy-now-form__label">
+        <input
+          class="buy-now-form__input"
+          type="tel"
+          name="tel"
+          placeholder="Phone"
+        />
+      </label>
+      <label class="buy-now-form__label">
+        <textarea
+          class="buy-now-form__input buy-now-form__textarea"
+          name="comment"
+          rows="3"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button class="buy-now-form__btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<script type="module" src="./js/buy-now.js"></script>
