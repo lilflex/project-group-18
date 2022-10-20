@@ -81,7 +81,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <button class="desc__btn" type="button" data-modal-open></button>
+          <button class="desc__btn" type="button">
+            <svg class="desc__icon" width="40" height="16">
+              <use href="./images/icons.svg#icon-Arrow-1"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -120,7 +124,6 @@
           loading="lazy"
         />
       </picture>
-      <img src="./images/hero/face-1.png" class="smile-pic" alt="" />
       <picture>
         <source
           media="(min-width: 1200px)"
@@ -152,6 +155,81 @@
           class="hero__background-img"
           src="./images/hero/dots-sm-@1x.png"
           alt="background dots"
+          loading="lazy"
+        />
+      </picture>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/face-md@1x.png 1x,
+            ./images/hero/face-md@2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/hero/face-sm@1x.png 1x,
+            ./images/hero/face-sm@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="smile-pic-1"
+          src="./images/hero/face-sm@1x.png"
+          alt="ice cream smile face-1"
+          loading="lazy"
+        />
+      </picture>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/face-md@1x-1.png 1x,
+            ./images/hero/face-md@2x-1.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/hero/face-sm@1x-1.png 1x,
+            ./images/hero/face-sm@2x-1.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="smile-pic-2"
+          src="./images/hero/face-sm@1x-1.png"
+          alt="ice cream smile face-2"
+          loading="lazy"
+        />
+      </picture>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/face-md@1x-2.png 1x,
+            ./images/hero/face-md@2x-2.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/hero/face-sm@1x-2.png 1x,
+            ./images/hero/face-sm@2x-2.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="smile-pic-3"
+          src="./images/hero/face-sm@1x-2.png"
+          alt="ice cream smile face-3"
           loading="lazy"
         />
       </picture>
@@ -210,7 +288,9 @@
       <a href="#contacts" class="mobile-menu__link link">Contact</a>
     </li>
   </ul>
-  <button type="button" class="header__btn">Buy now ></button>
+  <button type="button" class="header__btn" data-modal-hero-open>
+    Buy now >
+  </button>
 </div>
 
 <!-- Buy now modal -->
@@ -227,7 +307,7 @@
     </button>
     <h2 class="buy-now-modal__title">Buy now</h2>
     <form class="buy-now-form">
-      <div class="buy-now-form__container">
+      <div class="buy-now-form__container" role="group">
         <label class="buy-now__label-check">
           <input type="checkbox" name="ice-cream" class="buy-now__checked" />
           <div class="buy-now-form__box">
@@ -256,6 +336,7 @@
           type="text"
           name="Name"
           placeholder="Name"
+          required
         />
       </label>
       <label class="buy-now-form__label">
@@ -264,6 +345,9 @@
           type="tel"
           name="tel"
           placeholder="Phone"
+          required
+          minlength="12"
+          maxlength="12"
         />
       </label>
       <label class="buy-now-form__label">
