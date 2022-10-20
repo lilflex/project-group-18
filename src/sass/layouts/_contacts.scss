@@ -18,17 +18,17 @@
 }
 
 .contacts {
+  margin-top: -345px;
+  padding: 20px;
+
   font-size: 12px;
   font-weight: 500;
-
-  padding: 20px;
-  background-position: top 32px center;
+  background-position: 50% 0px;
   background-image: linear-gradient(
-      180deg,
-      transparent 345px,
-      var(--background-green) 0
-    ),
-    url('../images/customer-reviews/ice-cream-320.png');
+    180deg,
+    transparent 345px,
+    var(--background-green) 0
+  );
 
   background-size: cover;
 
@@ -36,35 +36,32 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(
-        180deg,
-        transparent 345px,
-        var(--background-green) 0
-      ),
-      url('../images/customer-reviews/ice-cream-320@2x.png');
+      180deg,
+      transparent 345px,
+      var(--background-green) 0
+    );
   }
 
   @media screen and (min-width: 768px) {
+    margin-top: -305px;
     padding: 31px;
 
-    background-position: top 28px center;
     background-image: linear-gradient(
-        180deg,
-        transparent 305px,
-        var(--background-green) 0
-      ),
-      url('../images/customer-reviews/ice-cream-768.png');
+      180deg,
+      transparent 305px,
+      var(--background-green) 0
+    );
   }
 
   @media screen and (min-width: 1200px) {
+    margin-top: -234px;
     padding: 40px;
 
-    background-position: top 32px center;
     background-image: linear-gradient(
-        180deg,
-        transparent 96px,
-        var(--background-green) 0
-      ),
-      url('../images/customer-reviews/ice-cream-1200.png');
+      180deg,
+      transparent 96px,
+      var(--background-green) 0
+    );
   }
 }
 
