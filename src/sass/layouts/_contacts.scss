@@ -19,7 +19,6 @@
 
 .contacts {
   margin-top: -345px;
-  padding: 20px;
 
   font-size: 12px;
   font-weight: 500;
@@ -44,7 +43,6 @@
 
   @media screen and (min-width: 768px) {
     margin-top: -305px;
-    padding: 31px;
 
     background-image: linear-gradient(
       180deg,
@@ -55,7 +53,6 @@
 
   @media screen and (min-width: 1200px) {
     margin-top: -234px;
-    padding: 40px;
 
     background-image: linear-gradient(
       180deg,
@@ -63,11 +60,6 @@
       var(--background-green) 0
     );
   }
-}
-
-.contacts__container {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .contacts__list {
@@ -257,14 +249,8 @@
   flex-direction: column;
   align-items: center;
 
-  margin-bottom: 40px;
-
   @media screen and (min-width: 768px) {
     flex-direction: row;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 120px;
   }
 }
 
