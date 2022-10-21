@@ -1,176 +1,200 @@
 .footer {
-  padding-top: 20px;
-  padding-bottom: 62px;
   background-color: #84a178;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 13px;
-  }
-}
-
-.footer-box--top {
   display: flex;
   flex-direction: column;
-  gap: 42px;
-
-  @media screen and (min-width: 768px) {
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and(min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 0;
+  }
+}
+.footer__content {
+  margin-bottom: 42px;
+  @media screen and(min-width: 768px) {
     margin-bottom: 32px;
   }
-}
-
-.footer-left-side {
-  width: 234px;
-
-  @media screen and (min-width: 768px) {
-    width: 352px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 515px;
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 54px;
   }
 }
-
-.footer-uppertitle {
-  margin-bottom: 16px;
-
-  color: #fcfcfc;
-  font-family: 'Montserrat', sans-serif;
+.footer__title {
+  font-family: 'Montserrat';
+  margin-top: 39px;
+  width: 232px;
   font-weight: 700;
   font-size: 18px;
-  line-height: calc(22 / 18);
-  text-transform: uppercase;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 9px;
-
-    font-size: 26px;
-    line-height: calc(32 / 26);
-    letter-spacing: 0.04em;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 14px;
-
-    font-size: 30px;
-    line-height: calc(37 / 30);
-  }
-}
-
-.footer-title {
-  color: #fcfcfc;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 34px;
-  line-height: 41px calc(41 / 34);
+  line-height: 1.2;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  color: #fcfcfc;
+  @media screen and(min-width: 768px) {
+    width: 352px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  @media screen and(min-width: 1200px) {
+    font-weight: 400;
+    width: 600px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
 
-  @media screen and (min-width: 768px) {
+.footer__text {
+  display: inline-block;
+  margin-top: 16px;
+  width: 200px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  @media screen and(min-width: 768px) {
+    width: 352px;
     font-size: 48px;
-    line-height: calc(59 / 48);
+    line-height: 59px;
     letter-spacing: 0.06em;
+    margin-top: 9px;
   }
-
-  @media screen and (min-width: 1200px) {
+  @media screen and(min-width: 1200px) {
+    width: 500px;
     font-size: 58px;
-    line-height: calc(71 / 58);
+    line-height: 71px;
+    letter-spacing: 0.06em;
+    margin-top: 14px;
+  }
+}
+.footer__contact {
+  margin-bottom: 38px;
+  @media screen and(min-width: 768px) {
+    margin-bottom: 32px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 40px;
   }
 }
 
-.footer-right-side {
+.footer__contact-list {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 30px;
 }
 
-.footer-list {
+.footer__contact-github,
+.footer__contact-telegram,
+.footer__contact-facebook {
+  right: 0;
   display: flex;
-  gap: 27px;
-  margin-bottom: 38px;
+  fill: #84a178;
+  &:hover {
+    fill: #fcfcfc;
+  }
+  &:focus {
+    outline: 3px solid #f8d24e;
+
+    border-radius: 50%;
+    fill: #f5f2f2;
+  }
+}
+.fooer__contact-icon {
+  width: 32px;
+  height: 32px;
+  margin: -2px;
 }
 
-.footer-contacts-text {
-  color: #131313;
-  font-family: 'Montserrat', sans-serif;
+.footer__contact-github {
+  right: 120px;
+}
+.footer__contact-telegram {
+  right: 60px;
+}
+.footer__tell {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+  gap: 5px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 56px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 60px;
+  }
+}
+.footer__tell-text {
   font-weight: 700;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.86;
 
-  @media screen and (min-width: 768px) {
+  color: #131313;
+  @media screen and(min-width:768px) {
     font-size: 14px;
   }
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+  }
 }
+.footer__tell-numbber {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
 
-.footer-contacts-link {
   color: #fcfcfc;
-}
-
-.footer-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-
-  background-color: #f8d24e;
-
-  @media screen and (min-width: 768px) {
-    transform: scale(1.1);
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+  }
+  @media screen and(min-width:768px) {
+    font-size: 16px;
   }
 }
+.footer__polic {
+  padding-top: 16px;
 
-.footer-social-icon {
-  fill: #84a178;
-}
-
-.footer-social-link:hover .footer-social-icon {
-  fill: #fcfcfc;
-}
-
-.footer-social-link:focus .footer-social-icon {
-  fill: #f5f2f2;
-}
-
-.footer-social-link:focus {
-  transform: scale(1.1);
-
-  @media screen and (min-width: 768px) {
-    transform: scale(1.3);
-  }
-}
-
-.border {
-  display: block;
-  width: 100%;
-  height: 1px;
-  margin-top: 40px;
-  margin-bottom: 16px;
-
-  background-color: #e1e1e1;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 14px;
-  }
-}
-
-.footer-box--bottom {
   display: flex;
   justify-content: center;
 }
 
-.footer-police {
-  width: 150px;
-
-  color: #7a7a7a;
-  font-family: 'Montserrat', sans-serif;
+.footer__polic-text {
   font-weight: 700;
   font-size: 14px;
-  line-height: 152%;
+  line-height: 1.52;
+  letter-spacing: 0.02em;
   text-align: center;
+  color: #7a7a7a;
+  width: 150px;
+  @media screen and(max-width: 767px) {
+    width: 150px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 250px;
+    font-size: 12px;
+    line-height: 1.86;
+  }
+}
+.footer-line {
+  background-color: #84a178;
+  max-width: 100%;
 
-  @media screen and (min-width: 768px) {
-    width: 298px;
+  border-top: 1px solid #f5f2f2;
+  padding-top: 16px;
+  padding-bottom: 62px;
+
+  @media screen and(min-width:768px) {
+    padding-top: 14px;
+    padding-bottom: 13px;
+  }
+  @media screen and(min-width:768px) {
+    padding-top: 12px;
+    padding-bottom: 11px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
