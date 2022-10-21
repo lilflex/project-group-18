@@ -1,5 +1,32 @@
 .customer-reviews {
+  padding-top: 80px;
+  padding-bottom: calc(48 + 345);
+
   font-family: Montserrat, sans-serif;
+
+  background-position: 50% 0;
+  background-image: url('../images/customer-reviews/ice-cream-320.png');
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/customer-reviews/ice-cream-320@2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 55px;
+    padding-bottom: calc(80 + 305);
+    background-position: 50% -180px;
+    background-image: url('../images/customer-reviews/ice-cream-768.png');
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: calc(95 + 139);
+    background-position: 50% -325px;
+    background-image: url('../images/customer-reviews/ice-cream-1200.png');
+  }
 }
 
 .customer-reviews__img {
@@ -107,5 +134,30 @@
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 32px;
+  }
+}
+
+/**
+  |============================
+  | Slick
+  |============================
+*/
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-dots li button {
+  display: none;
+}
+
+.slick-dots li {
+  border-radius: 50%;
+  margin-right: 18px;
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+
+  &.slick-active {
+    background-color: var(--background-green);
   }
 }
