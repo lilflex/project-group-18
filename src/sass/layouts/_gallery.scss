@@ -1,5 +1,7 @@
 .gallery {
   width: 100%;
+  position: relative;
+  top: -24px;
 
   // margin-right: auto;
   // margin-left: auto;
@@ -18,6 +20,8 @@
 
   // tablet
   @media screen and (min-width: 768px) {
+    position: relative;
+    top: -164px;
     background-image: url(../images/gallery_background/_m-@1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -28,6 +32,8 @@
 
   // desctop
   @media screen and (min-width: 1200px) {
+    position: relative;
+    top: -94px;
     background-image: url(../images/gallery_background/_l-@1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
