@@ -71,7 +71,7 @@
         </ul>
         <ul class="contacts__buttons">
             <li class="contacts__buttons-item">
-                <button class="button__locations button">
+                <button class="button__locations button" data-modal-open-location>
                     Our Locations
                     <svg class="contacts__arrow" width="12" height="12">
                         <use href="./images/icons.svg#arrow-forward"></use>
@@ -79,7 +79,7 @@
                 </button>
             </li>
             <li class="contacts__buttons-item">
-                <button class="button__franchise button">
+                <button class="button__franchise button" data-modal-open-franchise>
                     Franchise
                     <svg class="contacts__arrow" width="12" height="12">
                         <use href="./images/icons.svg#arrow-forward"></use>
@@ -91,3 +91,64 @@
 
     </div>
 </section>
+
+<div class="backdrop is-hidden" data-modal-franchise>
+    <div class="franchise">
+        <h2 class="franchise__title">
+            Thank you for your interest in owning an Ice Cream shop
+        </h2>
+        <p class="franchise__text">
+            Due to the overwhelming volume of franchise requests we are not accepting
+            new franchisee applications at this time. Once the application process
+            resumes, we will contact you for further information. Please fill out the
+            contact information below and we will reach out for additional
+            information. We appreciate your patience.
+        </p>
+        <form class="franchise__form">
+            <label class="franchise__label" for="name">
+                <input class="franchise__input" type="text" name="name" id="name" placeholder="Name" />
+            </label>
+            <label class="franchise__label" for="tel">
+                <input class="franchise__input" type="tel" name="tel" id="tel" placeholder="Phone" />
+            </label>
+            <label class="franchise__label" for="email">
+                <input class="franchise__input" type="email" name="email" id="email" placeholder="Email" />
+            </label>
+            <label class="franchise__label" for="textarea">
+                <textarea class="franchise__textarea" name="textarea" id="textarea" cols="30" rows="10"
+                    placeholder="Comment"></textarea>
+            </label>
+            <button class="franchise__btn" type="submit">Submit</button>
+        </form>
+        <button class="close-btn" type="button" data-modal-close-franchise>
+            <svg width="18" height="18">
+                <use href="./images/icons.svg#close-button"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="modal__location backdrop is-hidden" data-modal-location>
+    <div class="modal__location-body">
+        <div class="modal__location-content">
+            <button type="button" class="modal__location-close" data-modal-close-location><svg
+                    class="modal__location-icon">
+                    <use href="./images/icons.svg#close-button"></use>
+                </svg> </button>
+            <h2 class="modal__location-title">Our Locations</h2>
+            <div class="modal_location-img">
+                <a href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl=uk" target="_blank">
+                    <img srcset="
+                    ./images/modal_location/map224.jpg 224w,
+                    ./images/modal_location/map448.jpg 448w,
+                    ./images/modal_location/map448t.jpg 448-1w,
+                    ./images/modal_location/map896.jpg 896w"
+                        sizes="(min-width: 1200px) 896px, (min-width: 768px) 573px, (min-width: 320px) 224px, 100vw"
+                        src="./images/modal_location/map224.jpg" alt="Our Location Map">
+                </a>
+            </div>
+            <a href="https://maps.google.com/maps?ll=48.655393,29.153981&z=12&t=m&hl=en&gl=US&mapclient=embed&q=%D0%9C%D0%B0%D0%B9%D0%B4%D0%B0%D0%BD%20%D0%9D%D0%B5%D0%B7%D0%B0%D0%BB%D0%B5%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%96"
+                class="modal__location-map"><span class="modal__location-btn-text">Open map</span></a>
+        </div>
+    </div>
+</div>
