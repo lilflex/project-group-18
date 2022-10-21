@@ -1,12 +1,8 @@
+.gallery {
+  width: 100%;
 
-
-
-
-.gallery{
-width: 100%;
-
-// margin-right: auto;
-// margin-left: auto;
+  // margin-right: auto;
+  // margin-left: auto;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,38 +10,44 @@ width: 100%;
 
   // mobile
   background-image: url(../images/gallery_background/_s-@1x.png);
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/gallery_background/_s-@2x.png);
   }
 
   // tablet
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     background-image: url(../images/gallery_background/_m-@1x.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/gallery_background/_m-@2x.png);
     }
   }
-  
-  
+
   // desctop
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     background-image: url(../images/gallery_background/_l-@1x.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/gallery_background/_l-@2x.png);
     }
   }
 }
 
-
-
-
-.img{
-  
-    margin: auto;
-    border-radius: 24px;
+.img {
+  margin: auto;
+  border-radius: 24px;
+  width: 10000px;
+  height: 420px;
+  object-fit: cover;
 }
 
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -56,12 +58,8 @@ width: 100%;
 
 /* Hide the images by default */
 .mySlides {
-    display: none;
+  display: none;
 }
-
-
-
-
 
 /* Fading animation */
 .fade {
@@ -72,11 +70,19 @@ width: 100%;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
