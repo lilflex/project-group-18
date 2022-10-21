@@ -576,6 +576,9 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
+  @media screen and (max-width: 767px) {
+    overflow: scroll;
+  }
   @media screen and (min-width: 768px) {
     width: 568px;
     padding: 32px 54px;
